@@ -73,7 +73,7 @@ A clean SSNT public release contains exactly:
 - [FAQ](docs/FAQ.md)
 
 ### **Core Entry Point**
-- [`ssnt_run_all.py`](ssnt_run_all.py) — single deterministic master runner that reproduces the full SSNT pipeline
+- [`scripts/ssnt_run_all.py`](scripts/ssnt_run_all.py) — single deterministic master runner that reproduces the full SSNT pipeline
 
 ### **Canonical Reference Run**
 - [`SSNT_ALL_RUN_0001/`](SSNT_ALL_RUN_0001/) — frozen, hash-verified empirical ground truth  
