@@ -1,0 +1,6 @@
+{
+  "artifact": "ssnt_signature",
+  "transitions_sha256": "07f3721f58cf02b3b889e553661cb77fba7251f0ee1990efed8f3707206411eb",
+  "belts_sha256": "cdd87a52cadeb3bb24812dcf4d2f3e129aed0b60800eababcf8ddab00e568e41",
+  "signature_sha256": "c8f2bc2be833c1a0a2bf571dc57c75652b446466ab978c29890bbaf8cfed22f4"
+}
