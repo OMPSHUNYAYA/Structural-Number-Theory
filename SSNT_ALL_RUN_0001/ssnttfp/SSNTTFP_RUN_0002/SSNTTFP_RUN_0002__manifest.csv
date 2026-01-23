@@ -1,0 +1,28 @@
+key,value
+run_dir,C:\Users\ASUS\Desktop\SSNT\SSNT_ALL_RUN_0001\ssnttfp\SSNTTFP_RUN_0002
+run_id,SSNTTFP_RUN_0002
+n_max,20000
+t_def_1,t_c(n)=d_min(n)-2
+t_def_2,t_hat(n)=(d_min(n)-2)/(floor(sqrt(n))-1)
+H_def,H(n)=d_min(n)/floor(sqrt(n))
+scaled_unit,all normalized values scaled as int 1e6 via floor division
+calm_max_1e6,10000
+shock_min_1e6,200000
+band_thresholds,"A<= 3, B<= 11, C<= 31, D<= 101, E> D, P=prime"
+status_counts,"{'STRUCTURAL_PRIME': 2262, 'COMPOSITE': 17737}"
+corridor_counts,"{'CALM': 3266, 'NORMAL': 9434, 'SHOCK': 2776, 'UNDEFINED': 4522}"
+fracture_mode,absolute
+fracture_threshold_1e6,200000
+fracture_classes_1e6,"moderate>=200000, strong>=500000, extreme>=800000"
+fracture_total,2776
+fracture_class_counts,"{'MODERATE': 1542, 'STRONG': 838, 'EXTREME': 396}"
+rows_csv,SSNTTFP_RUN_0002__rows.csv
+transitions_csv,SSNTTFP_RUN_0002__transitions.csv
+fractures_csv,SSNTTFP_RUN_0002__fractures.csv
+fractures_topk_csv,SSNTTFP_RUN_0002__fractures_top50.csv
+rows_sha256,af9ccc7899c7225bf6b11abb8b3cb30e02727c4726d4610014bd5528e888d130
+transitions_sha256,07f3721f58cf02b3b889e553661cb77fba7251f0ee1990efed8f3707206411eb
+fractures_sha256,b8abfe2670e2a9a6b34d1a596f50017b753f5deac782888656fabb46647f438d
+fractures_topk_sha256,1d19aba2c944c338285e32f9ddaca84299f2ce2e2879663a35bc61170c8928a0
+signature_sha256,d856281bff9d39afa31a132741ab394b165e226337233ebe9c011cc054d167ee
+invariants,PASS
