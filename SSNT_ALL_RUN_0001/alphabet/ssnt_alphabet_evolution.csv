@@ -1,0 +1,6 @@
+n_cut,distinct_signatures,new_signatures_added_since_prev
+2000,14,14
+5000,27,13
+10000,32,5
+15000,53,21
+20000,54,1
