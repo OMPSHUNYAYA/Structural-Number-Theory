@@ -211,54 +211,43 @@ This yields a **finite symbolic alphabet** of integer behavior.
 
 ## 🔐 A Finite Alphabet Hidden Inside Infinite Integers
 
-SSNT reveals a strict and surprising invariant:
+SSNT reveals a strict and surprising compression:
 
-Across 20,000 consecutive integer transitions, **all observed integer behavior
-collapses into exactly 54 distinct structural signatures**.
+Within the canonical SSNT reference run (`n <= 20000`), all observed integer transition behavior
+collapses into exactly `54` distinct structural signatures.
 
 This result is:
-• deterministic
-• executable
-• reproducible across machines
-• free of probability, heuristics, or learning
+- deterministic
+- executable
+- reproducible across machines
+- free of probability, heuristics, or learning
 
-Signature discovery stabilizes rapidly:
-- n = 2,000  → 14 signatures
-- n = 5,000  → 27 signatures
-- n = 10,000 → 32 signatures
-- n = 15,000 → 53 signatures
-- n = 20,000 → 54 signatures
+Signature discovery stabilizes rapidly in the canonical run:
+- `n = 2000`  -> `14` signatures
+- `n = 5000`  -> `27` signatures
+- `n = 10000` -> `32` signatures
+- `n = 15000` -> `53` signatures
+- `n = 20000` -> `54` signatures
 
 The integer line is infinite.
-Its transition behavior is finite.
+Its transition behavior is compressible.
 
 SSNT does not compress numbers.
-It compresses **how integers behave when they move**.
+It compresses how integers behave when they move.
 
----
+### Canonical vs Extended (Interpretation Discipline)
 
-## ⚖️ Structural Shock Symmetry (+X / -X Invariant)
+**Canonical claim (release-grade):**
+- The SSNT public release is tied to the frozen reference run `SSNT_ALL_RUN_0001` with `n <= 20000`.
+- All documentation, counts, and signature claims in this README correspond to that run.
 
-SSNT reveals a second, independent invariant:
+**Extended observation (not part of the canonical claim):**
+- When the scan is extended beyond the canonical cutoff (e.g., `n <= 50000`),
+  the signature alphabet can grow slowly (e.g., `54 -> 60` in one extended run),
+  indicating a bounded but not immediately complete behavioral space.
 
-Structural shocks are not random.
-
-For every structural shock of magnitude +X,
-the immediately following transition exhibits a shock of magnitude -X.
-
-Observed empirically (n <= 20000):
-- exact magnitude pairing
-- opposite sign symmetry
-- ~50% of SHOCK transitions form oscillatory (+X, -X) pairs
-- no tuning, smoothing, or post-processing
-
-This symmetry is:
-- deterministic
-- arithmetic-exact
-- invariant under residue slicing
-
-Classical number theory has no notion of shock conservation.
-SSNT shows that integer behavior **balances**, not drifts.
+No target sizes are assumed.
+Only deterministic discovery curves are reported.
 
 ---
 
@@ -267,12 +256,13 @@ SSNT shows that integer behavior **balances**, not drifts.
 SSNT measures how many distinct signatures appear as `n` grows.
 
 Observed pattern:
-
 - rapid signature discovery at small `n`
-- slowing discovery as `n` increases
-- near-stabilization by higher cutoffs
+- long plateaus
+- occasional late discoveries under extended ranges
 
-This indicates that integer behavior under SSNT is **compressible and bounded**, not chaotic.
+This indicates that integer behavior under SSNT is compressible and bounded,
+and that alphabet completion should be treated as an empirical convergence question
+that depends on scan range, not as an assumed constant.
 
 ---
 
