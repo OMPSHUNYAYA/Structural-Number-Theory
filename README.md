@@ -211,10 +211,10 @@ This yields a **finite symbolic alphabet** of integer behavior.
 
 ## 🔐 A Finite Alphabet Hidden Inside Infinite Integers
 
-SSNT reveals a strict and surprising compression:
+SSNT reveals a strict and surprising compression of integer transition behavior.
 
-Within the canonical SSNT reference run (`n <= 20000`), all observed integer transition behavior
-collapses into exactly `54` distinct structural signatures.
+Within the canonical SSNT reference run (`n <= 20000`), all observed integer transitions
+collapse into exactly `54` distinct structural signatures.
 
 This result is:
 - deterministic
@@ -232,22 +232,13 @@ Signature discovery stabilizes rapidly in the canonical run:
 The integer line is infinite.
 Its transition behavior is compressible.
 
-SSNT does not compress numbers.
-It compresses how integers behave when they move.
+SSNT’s core claim is not that `54` is universal,
+but that integer behavior admits a finite, stabilizing structural alphabet
+under deterministic observation.
+The observed value `54` is a measured property of the canonical run.
 
-### Canonical vs Extended (Interpretation Discipline)
-
-**Canonical claim (release-grade):**
-- The SSNT public release is tied to the frozen reference run `SSNT_ALL_RUN_0001` with `n <= 20000`.
-- All documentation, counts, and signature claims in this README correspond to that run.
-
-**Extended observation (not part of the canonical claim):**
-- When the scan is extended beyond the canonical cutoff (e.g., `n <= 50000`),
-  the signature alphabet can grow slowly (e.g., `54 -> 60` in one extended run),
-  indicating a bounded but not immediately complete behavioral space.
-
-No target sizes are assumed.
-Only deterministic discovery curves are reported.
+Alphabet growth beyond the canonical range is an empirical question,
+subject to further deterministic scanning.
 
 ---
 
