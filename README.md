@@ -69,6 +69,7 @@ A clean SSNT public release contains exactly:
 ### **Docs**
 - [Concept Flyer (PDF)](docs/Concept-Flyer_SSNT_v1.8.pdf)
 - [Full Specification (PDF)](docs/SSNT_ver1.8.pdf)
+- [Documentation Scope & Canonical Range](docs/README.md)
 - [Quickstart Guide](docs/Quickstart.md)
 - [FAQ](docs/FAQ.md)
 
