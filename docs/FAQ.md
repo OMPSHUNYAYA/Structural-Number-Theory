@@ -278,7 +278,7 @@ SSNT demonstrates that integers form a **structured landscape** with:
 - fracture belts  
 - transition boundaries  
 
-The number line has geography.
+The number line exhibits regional structural differentiation.
 
 ---
 
@@ -325,7 +325,7 @@ As `n` increases:
 - then slow dramatically  
 - then stabilize  
 
-This confirms behavioral convergence.
+This supports behavioral convergence.
 
 ---
 
