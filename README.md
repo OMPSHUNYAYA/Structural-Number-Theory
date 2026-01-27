@@ -67,8 +67,8 @@ A clean SSNT public release contains exactly:
 ## 🔗 Quick Links
 
 ### **Docs**
-- [Concept Flyer (PDF)](docs/Concept-Flyer_SSNT_v1.8.pdf)
-- [Full Specification (PDF)](docs/SSNT_ver1.8.pdf)
+- [Concept Flyer (PDF)](docs/Concept-Flyer_SSNT_v1.8.1.pdf)
+- [Full Specification (PDF)](docs/SSNT_ver1.8.1.pdf)
 - [Documentation Scope & Canonical Range](docs/README.md)
 - [Quickstart Guide](docs/Quickstart.md)
 - [FAQ](docs/FAQ.md)
@@ -215,7 +215,7 @@ This yields a **finite symbolic alphabet** of integer behavior.
 SSNT reveals a strict and surprising compression of integer transition behavior.
 
 Within the canonical SSNT reference run (`n <= 20000`), all observed integer transitions
-collapse into exactly `54` distinct structural signatures.
+collapse into exactly `54` observed distinct structural signatures.
 
 This result is:
 - deterministic
