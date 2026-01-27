@@ -74,11 +74,22 @@ Interpretation should remain within mathematics unless explicitly mapped to anot
 
 ## Versioning Note
 
-Current documents reflect **Public Research Release v1.8**.
+Current documents reflect **Public Research Release v1.8.1**.
 
-Clarifications and refinements are bundled into **future version upgrades**
-rather than issued as isolated corrections, to preserve audit clarity
-and reviewer confidence.
+Version `v1.8.1` is a **documentation clarification release** only.
+It does **not** introduce new algorithms, parameters, scans, or empirical results.
+
+- The canonical reference run remains **SSNT_ALL_RUN_0001**
+- The scan range remains **n <= 20000**
+- All reported empirical quantities (including the 54-signature alphabet) are unchanged
+
+This update exists solely to improve:
+- interpretive clarity
+- scope discipline
+- reviewer-facing precision
+
+No empirical claims were modified, extended, or withdrawn.
+
 
 ---
 
