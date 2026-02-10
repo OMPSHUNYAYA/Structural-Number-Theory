@@ -34,6 +34,7 @@ D3. Is the integer line homogeneous?
 E1. What is the SSNT signature?  
 E2. Why is a finite alphabet important?  
 E3. Does the alphabet converge?  
+E4. What is the role of the 2,000,000 (2M) run? Does it change SSNT’s claims?
 
 **SECTION F — Cross-Validation & Robustness**  
 F1. What does cross-validation mean in SSNT?  
@@ -326,6 +327,34 @@ As `n` increases:
 - then stabilize  
 
 This supports behavioral convergence.
+
+---
+
+### E4. What is the role of the 2,000,000 (2M) run? Does it change SSNT’s claims?
+
+No.
+
+The 2,000,000 run is **not a second canonical run** and does not redefine SSNT’s core claims.
+
+Its role is strictly:
+
+- to **test alphabet stability under scale extension**
+- to **check for late-emergence signatures**
+- to **validate that observed convergence is not a small-range artifact**
+
+The canonical SSNT reference remains:
+
+- `SSNT_ALL_RUN_0001/` (`n <= 20000`)
+
+All definitions, figures, and primary claims are grounded in that run.
+
+The 2M artifacts:
+
+- are **supporting evidence only**
+- are **not required** to run or understand SSNT
+- exist to strengthen review confidence and empirical robustness
+
+No extrapolation beyond the tested range is asserted.
 
 ---
 
