@@ -1,0 +1,9 @@
+{
+  "signature_csv": "ssnt_signature.csv",
+  "signature_sha256": "a0aa0289e0b289d0c8354f59656df4ac79bbf906a5d520f218199b3c49e9217a",
+  "parameters": {
+    "fracture_hat": 200000,
+    "fracture_strong": 500000,
+    "fracture_extreme": 800000
+  }
+}
