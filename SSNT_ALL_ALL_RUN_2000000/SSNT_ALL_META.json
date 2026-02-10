@@ -1,0 +1,14 @@
+{
+  "run_id": "ALL_RUN_2000000",
+  "n_max": 2000000,
+  "timestamp_utc": "2026-02-03T14:50:12+00:00",
+  "ssnttfp_run_dir": "ssnttfp\\SSNTTFP_RUN_0001",
+  "fracture_hat": 200000,
+  "fracture_extreme": 800000,
+  "cutoffs": "10000,20000,50000,75000,100000,150000",
+  "alpha_top_k": 10,
+  "epochs_artifacts": [
+    "epochs.csv",
+    "fracture_cluster_epochs.csv"
+  ]
+}
