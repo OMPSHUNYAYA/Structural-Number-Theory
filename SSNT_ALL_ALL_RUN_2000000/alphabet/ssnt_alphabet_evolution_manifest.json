@@ -1,0 +1,23 @@
+{
+  "inputs": {
+    "signature_csv": "C:\\Users\\ASUS\\Desktop\\SSNT_Duality\\SSNT_ALL_ALL_RUN_2000000\\signature\\ssnt_signature.csv",
+    "signature_sha256": "a0aa0289e0b289d0c8354f59656df4ac79bbf906a5d520f218199b3c49e9217a"
+  },
+  "outputs": {
+    "alphabet_evolution_csv": "ssnt_alphabet_evolution.csv",
+    "alphabet_evolution_sha256": "1615d8f3f07692a1cc88407948a228c0da4c529d8c2fe74bc38ac0383d6e6a46",
+    "topk_csv": "ssnt_alphabet_topk_by_cutoff.csv",
+    "topk_sha256": "f13c466f31ac54cb6713a039766ed29e07f25f12b0b0ee3798f07063392dc52f"
+  },
+  "parameters": {
+    "cutoffs": [
+      10000,
+      20000,
+      50000,
+      75000,
+      100000,
+      150000
+    ],
+    "top_k": 10
+  }
+}
