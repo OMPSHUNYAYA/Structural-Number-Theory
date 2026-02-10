@@ -34,12 +34,19 @@ No adaptive tuning.
 A minimal, review-grade SSNT release contains only two front-door artifacts:
 
 ```
-
 /SSNT
-  ssnt_run_all.py
+  scripts/
+    ssnt_run_all.py
   SSNT_ALL_RUN_0001/
-
+  docs/
+    Quickstart.md
+    FAQ.md
 ```
+
+Optional (included in this repository for deep-scale evidence):
+
+- `SSNT_ALL_ALL_RUN_2000000/` — deterministic validation artifacts supporting alphabet convergence up to `n <= 2000000`
+- `docs/Alphabet Convergence and Scale Validation Report_SSNT.pdf` — the validation report summarizing the deep-scale results
 
 ### Entry point
 
@@ -83,11 +90,19 @@ This ensures:
 
 ---
 
+## NOTE ON DEEP-SCALE VALIDATION (OPTIONAL)
+
+This repository also includes `SSNT_ALL_ALL_RUN_2000000/`, which contains selected deterministic artifacts supporting alphabet convergence evidence up to `n <= 2000000`.
+
+These artifacts are **not required** to run SSNT or reproduce the canonical reference run. They exist purely to support review and scale-validation claims.
+
+---
+
 ## HOW TO RUN (ONE COMMAND)
 
 From the project root:
 
-`python ssnt_run_all.py --run-id RUN_0001 --n-max 20000`
+`python scripts/ssnt_run_all.py --run-id RUN_0001 --n-max 20000`
 
 This command deterministically executes:
 
