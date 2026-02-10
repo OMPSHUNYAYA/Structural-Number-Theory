@@ -103,7 +103,7 @@ Root-level files:
 - [Documentation Scope & Canonical Range](docs/README.md)
 - [Quickstart Guide](docs/Quickstart.md)
 - [FAQ](docs/FAQ.md)
-- [Alphabet Convergence & Scale Validation Report (PDF)](docs/Alphabet-Convergence-and-Scale-Validation-Report_SSNT.pdf)
+- [Alphabet Convergence & Scale Validation Report (PDF)](https://github.com/OMPSHUNYAYA/Structural-Number-Theory/blob/main/docs/Alphabet%20Convergence%20and%20Scale%20Validation%20Report_SSNT.pdf)
   
 ### **Core Entry Point**
 - [`scripts/ssnt_run_all.py`](scripts/ssnt_run_all.py) — single deterministic master runner that reproduces the full SSNT pipeline
