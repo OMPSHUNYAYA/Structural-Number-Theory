@@ -2,7 +2,13 @@
 
 **Redefining Integers as Behavioral Structure, Not Just Classification**
 
-![STARS](https://img.shields.io/badge/SSNT-STARS-green) ![Deterministic](https://img.shields.io/badge/Deterministic-Yes-green) ![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-green)
+![SSNT](https://img.shields.io/badge/SSNT-Structural%20Number%20Theory-brightgreen)
+![Deterministic](https://img.shields.io/badge/Deterministic-Yes-green)
+![Observation--Only](https://img.shields.io/badge/Observation--Only-Yes-green)
+![Structural--Admissibility](https://img.shields.io/badge/Structural%20Admissibility-Explicit-green)
+![Audit--Sealed](https://img.shields.io/badge/Audit--Sealed-Yes-green)
+![Reproducible](https://img.shields.io/badge/Reproducible-Yes-green)
+![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-green)
 
 **Deterministic • Integer Behavior • Structural Time • Fractures • Belts • Finite Alphabet • Observation-Only**
 
@@ -45,22 +51,47 @@ Everything is **deterministic**, **offline**, and **audit-friendly**.
 A clean SSNT public release contains exactly:
 
 ```
-
 /SSNT
-  ssnt_run_all.py
+  scripts/
+    ssnt_run_all.py
   SSNT_ALL_RUN_0001/
+  SSNT_ALL_ALL_RUN_2000000/
   docs/
+    Alphabet-Convergence-and-Scale-Validation-Report_SSNT.pdf
     Quickstart.md
     FAQ.md
-
 ```
 
 ### Notes
 
-- `ssnt_run_all.py` is the **single executable entry point**.
-- `SSNT_ALL_RUN_0001/` is the **frozen, hash-verified canonical reference run**.
-- All results described in the documentation correspond exactly to this run.
-- Intermediate scripts and legacy run folders are intentionally excluded to prevent reviewer ambiguity.
+- `scripts/ssnt_run_all.py` is the **single executable entry point**.
+- `SSNT_ALL_RUN_0001/` is the **frozen, hash-verified canonical reference run** (`n <= 20000`).
+- `SSNT_ALL_ALL_RUN_2000000/` contains **deterministic validation artifacts** supporting deep-scale alphabet convergence (`n <= 2000000`).
+- All documentation and claims explicitly state which range they refer to.
+- Intermediate scripts and legacy runs are intentionally excluded to prevent reviewer ambiguity.
+
+---
+
+### **Deep-Scale Validation Run (n <= 2,000,000)**
+
+- [`SSNT_ALL_ALL_RUN_2000000/`](SSNT_ALL_ALL_RUN_2000000/) — deterministic scale-validation artifacts  
+  (supports alphabet convergence and late-emergence analysis)
+
+Contained structure (selected, review-grade artifacts only):
+
+- `alphabet/` — alphabet evolution and cutoff analysis
+- `alphabet_ext/` — extended cutoff verification
+- `belts/` — belt stability under scale extension
+- `epochs/` — epoch scaling and fracture clustering
+- `signature/` — signature manifests (row-level tables omitted for size)
+
+Root-level files:
+
+- `SSNT_ALL_MANIFEST.csv` — master artifact manifest
+- `SSNT_ALL_META.json` — run metadata and parameter receipt
+
+> Large per-transition tables are intentionally omitted for repository hygiene.  
+> Cryptographic manifests preserve auditability and reproducibility.
 
 ---
 
@@ -72,7 +103,8 @@ A clean SSNT public release contains exactly:
 - [Documentation Scope & Canonical Range](docs/README.md)
 - [Quickstart Guide](docs/Quickstart.md)
 - [FAQ](docs/FAQ.md)
-
+- [Alphabet Convergence & Scale Validation Report (PDF)](docs/Alphabet-Convergence-and-Scale-Validation-Report_SSNT.pdf)
+  
 ### **Core Entry Point**
 - [`scripts/ssnt_run_all.py`](scripts/ssnt_run_all.py) — single deterministic master runner that reproduces the full SSNT pipeline
 
@@ -90,6 +122,17 @@ A clean SSNT public release contains exactly:
 ### **Manifests & Audit Records**
 - [`SSNT_ALL_RUN_0001/SSNT_ALL_MANIFEST.csv`](SSNT_ALL_RUN_0001/SSNT_ALL_MANIFEST.csv) — master output manifest
 - [`SSNT_ALL_RUN_0001/SSNT_ALL_META.json`](SSNT_ALL_RUN_0001/SSNT_ALL_META.json) — run metadata & parameter receipt
+
+### **Deep-Scale Validation Artifacts (n ≤ 2,000,000)**
+
+- [`SSNT_ALL_ALL_RUN_2000000/alphabet/`](SSNT_ALL_ALL_RUN_2000000/alphabet/) — alphabet stabilization & cutoff analysis
+- [`SSNT_ALL_ALL_RUN_2000000/alphabet_ext/`](SSNT_ALL_ALL_RUN_2000000/alphabet_ext/) — late-emergence verification
+- [`SSNT_ALL_ALL_RUN_2000000/belts/`](SSNT_ALL_ALL_RUN_2000000/belts/) — belt persistence under scale extension
+- [`SSNT_ALL_ALL_RUN_2000000/epochs/`](SSNT_ALL_ALL_RUN_2000000/epochs/) — epoch scaling & fracture clustering
+- [`SSNT_ALL_ALL_RUN_2000000/signature/`](SSNT_ALL_ALL_RUN_2000000/signature/) — signature manifests (summary-level)
+
+> These artifacts support validation of claims made in the  
+> *Alphabet Convergence & Scale Validation Report* and are not a second canonical run.
 
 > All outputs are deterministic, offline, reproducible, and identical across machines when inputs match.
 
@@ -238,8 +281,8 @@ but that integer behavior admits a finite, stabilizing structural alphabet
 under deterministic observation.
 The observed value `54` is a measured property of the canonical run.
 
-Alphabet growth beyond the canonical range is an empirical question,
-subject to further deterministic scanning.
+Alphabet growth beyond the canonical range is an empirical question, 
+addressed in this repository through deterministic validation up to `n <= 2000000`.
 
 ---
 
@@ -278,7 +321,7 @@ Survival under strong lenses supports the conclusion that structure is **intrins
 
 From the project root:
 
-`python ssnt_run_all.py --run-id RUN_0001 --n-max 20000`
+`python scripts/ssnt_run_all.py --run-id RUN_0001 --n-max 20000`
 
 This produces a single canonical run root containing:
 
